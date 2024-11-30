@@ -1,0 +1,185 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f0f8ff; /* Light background for a poppy feel */
+    color: #333;
+    padding-top: 70px; /* Add padding to compensate for fixed navbar */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #ff5722; /* Bright orange */
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    margin-left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav .nav-links li {
+    margin-left: 30px;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: #ffeb3b; /* Bright yellow on hover */
+}
+
+/* Hero Section */
+.hero-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/ashneer_grover.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero-image {
+    display: none; /* Not needed, using background image */
+}
+
+.hero-container h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-container p {
+    font-size: 24px;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ff5722; /* Bright orange for section titles */
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Section Images */
+.section-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#biography {
+    background-color: #ffccbc; /* Light peach */
+    color: #333;
+}
+
+#vision {
+    background-color: #ffe0b2; /* Light amber */
+}
+
+#achievements {
+    background-color: #c5cae9; /* Light blue */
+}
+
+#gallery {
+    background-color: #d1c4e9; /* Light purple */
+}
+
+/* Gallery Styles */
+.gallery-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners for gallery images */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Links */
+.social-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 15px;
+}
+
+.social-links a {
+    color: #ff5722; /* Bright orange */
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transition for pop effect */
+    display: flex;
+    align-items: center;
+}
+
+.social-links a i {
+    margin-right: 8px;
+    font-size: 28px; /* Larger icons for better visibility */
+}
+
+.social-links a:hover {
+    color: #ffeb3b; /* Bright yellow on hover */
+    transform: scale(1.1); /* Scale effect on hover */
+}
+/* Section Images */
+.section-image {
+    width: 100%; /* Use full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: none; /* Allow image to expand to its natural height */
+    margin-bottom: 20px;
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: none; /* Remove shadow if desired */
+}
